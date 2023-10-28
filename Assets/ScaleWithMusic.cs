@@ -69,7 +69,7 @@ public class ScaleWithMusic : MonoBehaviour
                 colorIndex = 0;
 
             GetComponent<SpriteRenderer>().color = epilepsy[colorIndex];
-            colorIndex += 1;
+            colorIndex += 1;    
         }
     }
 }
