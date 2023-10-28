@@ -513,7 +513,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.8962264, g: 0.8180639, b: 0.43458524, a: 0.101960786}
+  m_Color: {r: 1, g: 0.5969347, b: 0, a: 0.101960786}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -557,6 +557,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BPM: 128
+  epilepsy:
+  - {r: 1, g: 0, b: 0.79785585, a: 0}
+  - {r: 0, g: 0.16500854, b: 1, a: 0}
+  - {r: 0, g: 1, b: 0.1325705, a: 0}
+  - {r: 0.90552056, g: 1, b: 0, a: 0}
+  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 0, g: 1, b: 0.86110544, a: 0}
+  - {r: 1, g: 0.6572623, b: 0, a: 0}
+  epilepsyTime: 45
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,6 +794,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BPM: 128
+  epilepsy:
+  - {r: 1, g: 0, b: 0.79785585, a: 0}
+  - {r: 0, g: 0.16500854, b: 1, a: 0}
+  - {r: 0, g: 1, b: 0.1325705, a: 0}
+  - {r: 0.90552056, g: 1, b: 0, a: 0}
+  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 0, g: 1, b: 0.86110544, a: 0}
+  - {r: 1, g: 0.6572623, b: 0, a: 0}
+  epilepsyTime: 45
 --- !u!61 &751681526
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -872,7 +890,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.8962264, g: 0.8180639, b: 0.43458524, a: 0.101960786}
+  m_Color: {r: 1, g: 0.5969347, b: 0, a: 0.101960786}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -929,6 +947,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BPM: 128
+  epilepsy:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0.6685083, b: 0, a: 1}
+  - {r: 0.46547508, g: 0, b: 1, a: 1}
+  - {r: 0.04517293, g: 1, b: 0, a: 1}
+  - {r: 0, g: 0.87456703, b: 1, a: 1}
+  epilepsyTime: 45
 --- !u!95 &844910066
 Animator:
   serializedVersion: 5
@@ -1516,7 +1541,7 @@ MonoBehaviour:
   Walls: []
   BPM: 128
   attack: 323
-  gracePeriod: 0.3
+  gracePeriod: 0.1
 --- !u!1 &1876716826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,6 +1611,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BPM: 128
+  epilepsy:
+  - {r: 1, g: 0, b: 0.79785585, a: 0}
+  - {r: 0, g: 0.16500854, b: 1, a: 0}
+  - {r: 0, g: 1, b: 0.1325705, a: 0}
+  - {r: 0.90552056, g: 1, b: 0, a: 0}
+  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 0, g: 1, b: 0.86110544, a: 0}
+  - {r: 1, g: 0.6572623, b: 0, a: 0}
+  epilepsyTime: 45
 --- !u!61 &1876716830
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1673,7 +1707,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.8962264, g: 0.8180639, b: 0.43458524, a: 0.101960786}
+  m_Color: {r: 1, g: 0.5969347, b: 0, a: 0.101960786}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1836,6 +1870,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BPM: 128
+  epilepsy:
+  - {r: 1, g: 0, b: 0.79785585, a: 0}
+  - {r: 0, g: 0.16500854, b: 1, a: 0}
+  - {r: 0, g: 1, b: 0.1325705, a: 0}
+  - {r: 0.90552056, g: 1, b: 0, a: 0}
+  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 0, g: 1, b: 0.86110544, a: 0}
+  - {r: 1, g: 0.6572623, b: 0, a: 0}
+  epilepsyTime: 45
 --- !u!61 &2064149505
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1923,7 +1966,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.8962264, g: 0.8180639, b: 0.43458524, a: 0.101960786}
+  m_Color: {r: 1, g: 0.5969347, b: 0, a: 0.101960786}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

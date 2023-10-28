@@ -6,7 +6,12 @@ public class ScaleWithMusic : MonoBehaviour
 {
 
     [SerializeField] private float BPM;
+    
+    [SerializeField] private Color[] epilepsy;
 
+    private int colorIndex = 0;
+
+    [SerializeField] private float epilepsyTime;
 
     private float timeBetweenNotes;
 
@@ -32,12 +37,19 @@ public class ScaleWithMusic : MonoBehaviour
         if (Time.time - justBopped > timeBetweenNotes)
         {
             
+            
+
+
             bop = true;
         }
-
+            
         if(bop == true)
         {
-            animator.SetTrigger("Bop");
+            if (Time.time > epilepsyTime)
+                animator.SetTrigger("Epilepsy");
+            else
+                animator.SetTrigger("Bop");
+
             bop = false;
             justBopped = Time.time;
         }
@@ -48,4 +60,16 @@ public class ScaleWithMusic : MonoBehaviour
     public void EnableAttack() => GetComponentInParent<AttackWithMusic>().EnableAttack(true);
 
     public void DisableAttack() => GetComponentInParent<AttackWithMusic>().EnableAttack(false);
+
+    public void ChangeColor()
+    {
+        if (Time.time > epilepsyTime)
+        { 
+            if (colorIndex == epilepsy.Length)
+                colorIndex = 0;
+
+            GetComponent<SpriteRenderer>().color = epilepsy[colorIndex];
+            colorIndex += 1;    
+        }
+    }
 }
