@@ -5366,6 +5366,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: WitchAura
       objectReference: {fileID: 0}
+    - target: {fileID: 6591846977607433104, guid: 56ae0685e3e683247a2537809b4c71b7, type: 3}
+      propertyPath: UVModule.cycles
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591846977607433104, guid: 56ae0685e3e683247a2537809b4c71b7, type: 3}
+      propertyPath: UVModule.sprites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591846977607433104, guid: 56ae0685e3e683247a2537809b4c71b7, type: 3}
+      propertyPath: UVModule.sprites.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: -36221318, guid: e3705b8d05df98a4ea5f6563e6b0ea2f, type: 3}
+    - target: {fileID: 6591846977607433104, guid: 56ae0685e3e683247a2537809b4c71b7, type: 3}
+      propertyPath: UVModule.sprites.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: -1506909590, guid: e3705b8d05df98a4ea5f6563e6b0ea2f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5497,6 +5513,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 226623894096799618, guid: 00d7fd336de394a4a9fdc245c7c01fd3, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6379073784656238598, guid: 00d7fd336de394a4a9fdc245c7c01fd3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3
@@ -5536,6 +5556,14 @@ PrefabInstance:
     - target: {fileID: 6379073784656238598, guid: 00d7fd336de394a4a9fdc245c7c01fd3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8352394438506585219, guid: 00d7fd336de394a4a9fdc245c7c01fd3, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656004586207005621, guid: 00d7fd336de394a4a9fdc245c7c01fd3, type: 3}
+      propertyPath: looping
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8662442816351927096, guid: 00d7fd336de394a4a9fdc245c7c01fd3, type: 3}
       propertyPath: m_Name
