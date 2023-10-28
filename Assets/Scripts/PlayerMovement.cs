@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private KeyCode left;
     [SerializeField] private KeyCode right;
     [SerializeField] private KeyCode dropDown;
-    [SerializeField] private KeyCode attack;
+    
 
     [SerializeField] private float speed;
     [SerializeField] private float dropDownForce;
@@ -43,10 +43,7 @@ public class PlayerMovement : MonoBehaviour
 
         velocity = new Vector2(0f, rb.velocity.y);
 
-        if(Input.GetKeyDown(attack))
-        {
-            playerAnim.SetTrigger("Attack");
-        }
+        
 
         if (Input.GetKeyDown(jump) && jumpEnabled && !Input.GetKey(dropDown))
         {
