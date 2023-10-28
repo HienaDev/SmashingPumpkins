@@ -43,7 +43,7 @@ public class AttackWithMusic : MonoBehaviour
 
         Debug.Log((Time.time > justBoppedBefore + timeBetweenNotes - (gracePeriod / 2) && Time.time < justBopped + (gracePeriod / 2)));
 
-        /*if (Input.GetKeyDown(attack) &&*/ if((Time.time > justBoppedBefore + timeBetweenNotes - (gracePeriod / 2) && Time.time < justBopped + (gracePeriod / 2)) && canAttack)
+        if (Input.GetKeyDown(attack) && ( Time.time > justBoppedBefore + timeBetweenNotes - (gracePeriod / 2) && Time.time < justBopped + (gracePeriod / 2)) && canAttack)
         {
             canAttack = false;
             playerAnimator.SetTrigger("Attack");

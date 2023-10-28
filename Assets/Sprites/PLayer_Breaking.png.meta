@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8cd761737c2738c47a7b14b287f7d852
+guid: 9179e34b563fd8141ad4001610f71ec9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_Idle_0
+      name: PLayer_Breaking_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54acf744ee4d57c4498e675efc3e93f7
-      internalID: 1586899844
+      spriteID: 622572d966c1c5a45a73096979dfbe48
+      internalID: -1589326338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Idle_1
+      name: PLayer_Breaking_1
       rect:
         serializedVersion: 2
         x: 40
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fabf3892ff07c7949aa44784342d4855
-      internalID: 295073346
+      spriteID: 212a44aaf5755564091943451e740c40
+      internalID: -1273578036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Idle_2
+      name: PLayer_Breaking_2
       rect:
         serializedVersion: 2
         x: 80
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0a99c2f36845c04e9cfff833c14e12a
-      internalID: 1572482890
+      spriteID: 40fdf1109c4ef4d49a90136fa2e0927c
+      internalID: -520850918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Idle_3
+      name: PLayer_Breaking_3
       rect:
         serializedVersion: 2
         x: 120
@@ -200,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53fa28512b0c1f1449816ef2605f93e4
-      internalID: -732357487
+      spriteID: 291991804b1946c4b839a137eb6618e3
+      internalID: -1397313449
       vertices: []
       indices: 
       edges: []
@@ -217,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player_Idle_0: 1586899844
-      Player_Idle_1: 295073346
-      Player_Idle_2: 1572482890
-      Player_Idle_3: -732357487
+      PLayer_Breaking_0: -1589326338
+      PLayer_Breaking_1: -1273578036
+      PLayer_Breaking_2: -520850918
+      PLayer_Breaking_3: -1397313449
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

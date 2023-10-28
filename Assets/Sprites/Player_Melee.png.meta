@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8cd761737c2738c47a7b14b287f7d852
+guid: d343f44fea9c3aa439634ec655eadb8f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,85 +123,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_Idle_0
+      name: Player_Melee_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54acf744ee4d57c4498e675efc3e93f7
-      internalID: 1586899844
+      spriteID: c3ca70ade387c5943a1ca08b5e6ccdef
+      internalID: 1107572848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Idle_1
+      name: Player_Melee_1
       rect:
         serializedVersion: 2
-        x: 40
+        x: 50
         y: 0
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fabf3892ff07c7949aa44784342d4855
-      internalID: 295073346
+      spriteID: c7b8d6874567eed4fafadd8d710b8dab
+      internalID: 1628502844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Idle_2
+      name: Player_Melee_2
       rect:
         serializedVersion: 2
-        x: 80
+        x: 100
         y: 0
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0a99c2f36845c04e9cfff833c14e12a
-      internalID: 1572482890
+      spriteID: d27a8fdeb91b066438b697d98a8caeda
+      internalID: 34159037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Idle_3
+      name: Player_Melee_3
       rect:
         serializedVersion: 2
-        x: 120
+        x: 150
         y: 0
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53fa28512b0c1f1449816ef2605f93e4
-      internalID: -732357487
+      spriteID: 8805d86e56fe0514faae8c72d82ae74f
+      internalID: -668861245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Melee_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fad3d61e85ee3640b79c8efacd1f4eb
+      internalID: 1017842132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Melee_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9ea1cbd0ccde0489c58caa02036a1f
+      internalID: -77906330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Melee_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9095f4eeb6550f4987de25fbbd6763a
+      internalID: 1777350780
       vertices: []
       indices: 
       edges: []
@@ -217,10 +280,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player_Idle_0: 1586899844
-      Player_Idle_1: 295073346
-      Player_Idle_2: 1572482890
-      Player_Idle_3: -732357487
+      Player_Melee_0: 1107572848
+      Player_Melee_1: 1628502844
+      Player_Melee_2: 34159037
+      Player_Melee_3: -668861245
+      Player_Melee_4: 1017842132
+      Player_Melee_5: -77906330
+      Player_Melee_6: 1777350780
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
