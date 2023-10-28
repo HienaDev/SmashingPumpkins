@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isFacingRight = true;
 
-    private Animator playerAnim;
+    [SerializeField] private Animator playerAnim;
 
     private Rigidbody2D rb;
 
@@ -34,7 +34,6 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         defaultGravity = rb.gravityScale;
-        playerAnim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -81,6 +80,8 @@ public class PlayerMovement : MonoBehaviour
         }
 
         rb.velocity = velocity;
+
+        playerAnim.SetFloat("MoveSpeedX", Mathf.Abs(rb.velocity.x));
 
         //if (rb.velocity.y >= -0.1f && rb.velocity.y <= 0.1f) playerAnim.SetFloat("MoveSpeedX", Mathf.Abs(rb.velocity.x));
         //else playerAnim.SetFloat("MoveSpeedX", 0f);
