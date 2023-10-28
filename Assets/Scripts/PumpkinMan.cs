@@ -5,14 +5,13 @@ using UnityEngine;
 public class PumpkinMan : MonoBehaviour
 {
 
+    [SerializeField] private int moveSpeed;
     private Rigidbody2D rb;
-    private int moveSpeed;
 
     // Start is called before the first frame update
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
-        moveSpeed = 5;
     }
 
     // Update is called once per frame
