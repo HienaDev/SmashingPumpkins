@@ -42,10 +42,10 @@ public class AttackWithMusic : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(attack) && Time.time - justBopped > timeBetweenNotes - gracePeriod)
-        {
-            playerAnimator.SetTrigger("Attack");
-        }
+        //if (Input.GetKeyDown(attack) && (Time.time > justBopped + timeBetweenNotes - gracePeriod || Time.time < justBopped)
+        //{
+        //    playerAnimator.SetTrigger("Attack");
+        //}
 
         if (bop == true)
         {
