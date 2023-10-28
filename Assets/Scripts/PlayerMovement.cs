@@ -47,12 +47,14 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(jump) && jumpEnabled && !Input.GetKey(dropDown))
         {
             velocity.y = jumpForce;
+            playerAnim.SetTrigger("Jump");
             jumpEnabled = false;
         }
 
         if(Input.GetKeyUp(jump))
         {
             rb.gravityScale *= 2;
+
         }
 
         if (Input.GetKey(left))
