@@ -34,7 +34,7 @@ public class ScaleWithMusic : MonoBehaviour
     {
         
 
-        if (Time.time - justBopped > timeBetweenNotes)
+        if (Time.timeSinceLevelLoad - justBopped > timeBetweenNotes)
         {
             
             
@@ -45,13 +45,13 @@ public class ScaleWithMusic : MonoBehaviour
             
         if(bop == true)
         {
-            if (Time.time > epilepsyTime)
+            if (Time.timeSinceLevelLoad > epilepsyTime)
                 animator.SetTrigger("Epilepsy");
             else
                 animator.SetTrigger("Bop");
 
             bop = false;
-            justBopped = Time.time;
+            justBopped = Time.timeSinceLevelLoad;
         }
         
 
@@ -63,7 +63,7 @@ public class ScaleWithMusic : MonoBehaviour
 
     public void ChangeColor()
     {
-        if (Time.time > epilepsyTime)
+        if (Time.timeSinceLevelLoad > epilepsyTime)
         { 
             if (colorIndex == epilepsy.Length)
                 colorIndex = 0;

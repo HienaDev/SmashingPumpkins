@@ -21,10 +21,10 @@ public class SpawnJacks : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > justSpawned + spawnTimer)
+        if (Time.timeSinceLevelLoad > justSpawned + spawnTimer)
         {
             Instantiate(jack, transform);
-            justSpawned = Time.time;
+            justSpawned = Time.timeSinceLevelLoad;
         }
     }
 }

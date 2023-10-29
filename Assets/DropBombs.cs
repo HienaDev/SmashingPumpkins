@@ -30,10 +30,10 @@ public class DropBombs : MonoBehaviour
     void Update()
     {
         Debug.Log(nextTime);
-        Debug.Log("drop?" + (Time.time - justExploded > nextTime));
+        Debug.Log("drop?" + (Time.timeSinceLevelLoad - justExploded > nextTime));
 
 
-        if (Time.time - justExploded > nextTime && dropped)
+        if (Time.timeSinceLevelLoad - justExploded > nextTime && dropped)
         {
             animator.SetTrigger("Drop");
             dropped = false;
@@ -46,7 +46,7 @@ public class DropBombs : MonoBehaviour
 
 
         GameObject temp = Instantiate(pumpkin, gameObject.transform.position, Quaternion.identity, pumpkinManager.transform);
-        justExploded = Time.time;
+        justExploded = Time.timeSinceLevelLoad;
 
         nextTime = times[Random.Range(0, times.Length)];
         dropped = true;

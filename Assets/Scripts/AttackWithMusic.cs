@@ -38,16 +38,16 @@ public class AttackWithMusic : MonoBehaviour
     {
 
 
-        if (Time.time - justBopped > timeBetweenNotes)
+        if (Time.timeSinceLevelLoad - justBopped > timeBetweenNotes)
         {
             bop = true;
         }
 
-        //Debug.Log((Time.time > justBoppedBefore + timeBetweenNotes - (gracePeriod / 2) && Time.time < justBopped + (gracePeriod / 2)));
+        //Debug.Log((Time.timeSinceLevelLoad > justBoppedBefore + timeBetweenNotes - (gracePeriod / 2) && Time.timeSinceLevelLoad < justBopped + (gracePeriod / 2)));
 
         if (Input.GetKeyDown(attack))
         {
-            if ((Time.time > justBoppedBefore + timeBetweenNotes - (gracePeriod / 2) && Time.time < justBopped + (gracePeriod / 2)) && canAttack)
+            if ((Time.timeSinceLevelLoad > justBoppedBefore + timeBetweenNotes - (gracePeriod / 2) && Time.timeSinceLevelLoad < justBopped + (gracePeriod / 2)) && canAttack)
                 wellTimed = true;
             else
                 wellTimed = false;
@@ -59,14 +59,14 @@ public class AttackWithMusic : MonoBehaviour
             Debug.Log(justBopped + (gracePeriod / 2));  
         }
 
-        if (Time.time >= justBopped + (gracePeriod / 2)) canAttack = true;
+        if (Time.timeSinceLevelLoad >= justBopped + (gracePeriod / 2)) canAttack = true;
 
         if (bop == true)
         {
             bop = false;
 
             justBoppedBefore = justBopped;
-            justBopped = Time.time;
+            justBopped = Time.timeSinceLevelLoad;
         }
 
 
