@@ -19,8 +19,8 @@ TagManager:
   - Wall
   - PumpkinProjectile
   - Witch
-  - 
-  - 
+  - Platform
+  - PumpkinFlying
   - 
   - 
   - 
@@ -46,4 +46,7 @@ TagManager:
     locked: 0
   - name: Ghosts
     uniqueID: 2274905789
+    locked: 0
+  - name: UI
+    uniqueID: 1058374329
     locked: 0

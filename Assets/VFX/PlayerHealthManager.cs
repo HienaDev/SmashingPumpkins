@@ -12,6 +12,9 @@ public class PlayerHealthManager : MonoBehaviour
     private LayerMask _batMask;
     [SerializeField]
     private LayerMask _jackMask;
+
+    [SerializeField]
+    private LayerMask _bombsMask;
     [SerializeField]
     private bool _vulnerable = true;
     [SerializeField]
@@ -33,7 +36,7 @@ public class PlayerHealthManager : MonoBehaviour
     {
         int x = 1 << collision.gameObject.layer;
 
-        if (x == _jackMask.value && _vulnerable)
+        if (x == _jackMask.value && _vulnerable || x == _bombsMask.value && _vulnerable)
         {
             TakeDamage();
         }
