@@ -19,17 +19,6 @@ public class FeverManager : MonoBehaviour
     void Update()
     {
         Debug.Log(attackScript.GetTiming());
-        if (Input.GetMouseButtonDown(0))
-        {
-
-            if(attackScript.GetTiming())
-            {
-                animator.SetTrigger("WellT");
-            }
-            else
-            {
-                animator.SetTrigger("BadT");
-            }
-        }
+        
     }
 }

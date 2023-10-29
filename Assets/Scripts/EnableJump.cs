@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnableJump : MonoBehaviour
 {
     [SerializeField] private LayerMask groundMask;
+    [SerializeField] private LayerMask platformMask;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,7 @@ public class EnableJump : MonoBehaviour
 
 
         // Trigger Clown Falling
-        if (x == groundMask.value)
+        if (x == groundMask.value || x == platformMask.value)
         {
             PlayerMovement temp = gameObject.GetComponentInParent<PlayerMovement>();
             temp.EnableJump();

@@ -14,6 +14,8 @@ public class WitchMove : MonoBehaviour
 
     private bool isFacingRight = true;
 
+    [SerializeField] private LayerMask batMask;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,5 +54,30 @@ public class WitchMove : MonoBehaviour
 
             transform.Rotate(0f, 180f, 0f);
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        int x = 1 << collision.gameObject.layer;
+
+
+
+
+        if (x == batMask.value)
+        {
+            GetComponent<Animator>().SetTrigger("Death");
+
+        }
+
+    }
+
+    public void DestroySelf()
+    {
+        Destroy(gameObject);    
     }
 }
