@@ -51,11 +51,7 @@ public class PlayerMovement : MonoBehaviour
             jumpEnabled = false;
         }
 
-        if(Input.GetKeyUp(jump))
-        {
-            rb.gravityScale *= 2;
-
-        }
+        
 
         if (Input.GetKey(left))
         {
@@ -74,6 +70,12 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             rb.gravityScale = defaultGravity;
+        }
+
+        if (!Input.GetKey(jump))
+        {
+            rb.gravityScale *= 2;
+
         }
 
         if (rb.velocity.y < 0f && rb.velocity.y > -maxDownSpeed)

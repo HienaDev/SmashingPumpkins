@@ -20,6 +20,8 @@ public class AttackWithMusic : MonoBehaviour
     private float justBoppedBefore;
     private bool bop = true;
 
+    private bool wellTimed = false;
+
     private bool canAttack = false;
 
 
@@ -41,10 +43,15 @@ public class AttackWithMusic : MonoBehaviour
             bop = true;
         }
 
-        Debug.Log((Time.time > justBoppedBefore + timeBetweenNotes - (gracePeriod / 2) && Time.time < justBopped + (gracePeriod / 2)));
+        //Debug.Log((Time.time > justBoppedBefore + timeBetweenNotes - (gracePeriod / 2) && Time.time < justBopped + (gracePeriod / 2)));
 
-        if (Input.GetKeyDown(attack) && ( Time.time > justBoppedBefore + timeBetweenNotes - (gracePeriod / 2) && Time.time < justBopped + (gracePeriod / 2)) && canAttack)
+        if (Input.GetKeyDown(attack))
         {
+            if ((Time.time > justBoppedBefore + timeBetweenNotes - (gracePeriod / 2) && Time.time < justBopped + (gracePeriod / 2)) && canAttack)
+                wellTimed = true;
+            else
+                wellTimed = false;
+
             canAttack = false;
             playerAnimator.SetTrigger("Attack");
             
@@ -66,4 +73,6 @@ public class AttackWithMusic : MonoBehaviour
     }
 
     public void EnableAttack(bool attack) => canAttack = attack;
+
+    public bool GetTiming() => wellTimed;
 }
