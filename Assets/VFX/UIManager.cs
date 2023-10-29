@@ -7,15 +7,25 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     [SerializeField]
-    private GameObject _aboutImage;
+    private Animator _menuAnimator;
+    [SerializeField]
+    private AudioClip[] _buttonsAudio;
+    private AudioSource _audioSource;
+
+    private void Start()
+    {
+        _audioSource = GetComponent<AudioSource>();
+    }
     public void StartGame()
     {
-        SceneManager.LoadScene(2);
+        _audioSource.PlayOneShot(_buttonsAudio[0]);
+        _menuAnimator.SetTrigger("Start");
     }
 
     public void QuitGame()
     {
-        Application.Quit();
+        _audioSource.PlayOneShot(_buttonsAudio[1]);
+        _menuAnimator.SetTrigger("Quit");
     }
 
     public void About()
