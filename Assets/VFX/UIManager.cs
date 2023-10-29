@@ -9,6 +9,8 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private Animator _menuAnimator;
     [SerializeField]
+    private Animator _aboutAnimator;
+    [SerializeField]
     private AudioClip[] _buttonsAudio;
     private AudioSource _audioSource;
 
@@ -33,4 +35,13 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void AboutHover()
+    {
+        _aboutAnimator.SetTrigger("Hover");
+    }
+
+    public void AboutExit()
+    {
+        _aboutAnimator.SetTrigger("Exit");
+    }
 }
