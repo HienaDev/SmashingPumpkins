@@ -68,8 +68,13 @@ public class ScaleWithMusic : MonoBehaviour
             if (colorIndex == epilepsy.Length)
                 colorIndex = 0;
 
-            GetComponent<SpriteRenderer>().color = epilepsy[colorIndex];
-            colorIndex += 1;    
-        }
+            Debug.Log("colori: " + colorIndex);
+            Debug.Log("length: " + epilepsy.Length);
+
+            try { GetComponent<SpriteRenderer>().color = epilepsy[colorIndex]; }
+            catch { GetComponentInChildren<SpriteRenderer>().color = epilepsy[colorIndex]; }
+
+            colorIndex += 1;
+            }
     }
 }

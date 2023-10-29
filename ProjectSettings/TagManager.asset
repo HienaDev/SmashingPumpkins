@@ -12,13 +12,13 @@ TagManager:
   - Water
   - UI
   - Floor
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - JackHead
+  - Bat
+  - Jack
+  - Player
+  - Wall
+  - PumpkinProjectile
+  - Witch
   - 
   - 
   - 
@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1756526689
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ghosts
+    uniqueID: 2274905789
     locked: 0
