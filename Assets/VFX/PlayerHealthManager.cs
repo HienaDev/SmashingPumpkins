@@ -42,6 +42,7 @@ public class PlayerHealthManager : MonoBehaviour
     private void TakeDamage()
     {
         _currentHealth--;
+        _gameUI.ChangeHealth(_currentHealth);
         StartCoroutine(InvencibilityWindowCoroutine());
     }
 
