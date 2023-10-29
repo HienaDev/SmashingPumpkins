@@ -15,6 +15,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Hiena.unity
     guid: eadcb4fbd8614ef41b89172c8ac6ca60
   - enabled: 1
-    path: Assets/Scenes/EndScreen goncalo.unity
+    path: Assets/Scenes/EndScreen.unity
     guid: ad394d23e10791a49b3926df5b3ea209
+  - enabled: 1
+    path: Assets/Scenes/Bugs.unity
+    guid: f2bd5bb7c14572048a92b49df6b5fe86
+  - enabled: 1
+    path: Assets/Scenes/Hiena2.unity
+    guid: a2f6d9ad1b9595046ae05ee97106ca3b
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/VFXScene.unity
+    guid: ac168fb9b64db9f4d9e1e852d69610dc
   m_configObjects: {}
